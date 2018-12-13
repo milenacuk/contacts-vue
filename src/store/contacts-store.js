@@ -32,9 +32,9 @@ export default {
     },
     actions: {
         async getContacts(context, payload){
-        try{         
-            const contactsData = await contactsService.getContacts(payload);
-            context.commit('SET_CONTACTS', contactsData)
+            try{         
+                const contactsData = await contactsService.getContacts(payload);
+                context.commit('SET_CONTACTS', contactsData)
         }catch(errors){
             context.commit('SET_ERRORS', errors)
         }

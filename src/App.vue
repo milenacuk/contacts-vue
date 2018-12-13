@@ -47,4 +47,7 @@ export default {
     line-height: 60px;
     background-color: #f5f5f5;
 }
+main {
+  margin-top: 100px;
+}
 </style>
